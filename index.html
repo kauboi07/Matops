@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Matops</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="app">
+
+    <h1>Matops</h1>
+
+    <div id="modeSection" class="panel">
+        <h2>Select Mode</h2>
+        <div class="btn-row">
+            <button onclick="selectSingle()">Single Matrix</button>
+            <button onclick="selectDouble()">Two Matrices</button>
+        </div>
+    </div>
+
+    <div id="sizeSection" class="panel hidden">
+
+        <h2 id="matrixATitle" class="matrix-title">Matrix</h2>
+
+        <div class="size-row">
+            <label>Rows</label>
+            <input type="number" id="rows1">
+            <label>Cols</label>
+            <input type="number" id="cols1">
+        </div>
+
+        <div id="matrix" class="matrix"></div>
+
+        <div id="matrixBSection" class="hidden">
+
+            <h2 id="matrixBTitle" class="matrix-title">Matrix B</h2>
+
+            <div class="size-row">
+                <label>Rows</label>
+                <input type="number" id="rows2">
+                <label>Cols</label>
+                <input type="number" id="cols2">
+            </div>
+
+            <div id="matrix2" class="matrix"></div>
+        </div>
+
+        <button onclick="generateMatrix()">Generate Matrix</button>
+    </div>
+
+    <div id="operationSection" class="panel hidden">
+        <h2>Operations</h2>
+
+        <div id="singleOps" class="btn-row hidden">
+            <button onclick="det()">Determinant</button>
+            <button onclick="trace()">Trace</button>
+            <button onclick="sq()">Square</button>
+            <button onclick="cube()">Cube</button>
+            <button onclick="adj()">Adjoint</button>
+            <button onclick="inv()">Inverse</button>
+            <button onclick="rank()">Rank</button>
+        </div>
+
+        <div id="doubleOps" class="btn-row hidden">
+            <button onclick="add()">Add</button>
+            <button onclick="subtract()">Subtract</button>
+            <button onclick="mul()">Multiply</button>
+        </div>
+    </div>
+
+    <div id="resultSection" class="panel hidden">
+        <h2 id="resultTitle"></h2>
+        <pre id="result"></pre>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
