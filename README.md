@@ -1,6 +1,6 @@
-# MatOps
+# Matops
 
-**MatOps** is a lightweight web application for performing common matrix operations such as determinant, trace, rank, inverse, adjoint, and matrix arithmetic.  
+**Matops** is a lightweight web application for performing common matrix operations such as determinant, trace, rank, inverse, adjoint, and matrix arithmetic.  
 It is designed to help students **verify their matrix solutions quickly and visually** while learning linear algebra.
 
 The project is built entirely using **vanilla HTML, CSS, and JavaScript**, with no external libraries or frameworks.
