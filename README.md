@@ -40,5 +40,3 @@ MatOps was built to solve that problem — a **simple, focused, and distraction-
 ---
 
 
-## 📂 Project Structure
-
